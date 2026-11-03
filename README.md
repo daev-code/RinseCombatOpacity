@@ -1,28 +1,29 @@
 # Rinse Combat Opacity
 
-Companion addon for [Rinse](https://github.com/Otari98/Rinse) (WoW 1.12) that adds a
-separate **in-combat opacity** for Rinse's frame.
+Gives [Rinse](https://github.com/Otari98/Rinse) a separate opacity for combat. For WoW 1.12.
 
 ## Usage
 
-Rinse's options window gets a **Combat Opacity** slider right under Rinse's own Opacity
-slider, which is relabelled **OOC Opacity**:
+Rinse's options window gets a new **Combat Opacity** slider, right under Rinse's own Opacity
+slider. That one is renamed **OOC Opacity**, because it now only applies out of combat.
 
-| State | Opacity |
+| When | Opacity |
 |---|---|
 | In combat | Combat Opacity (default 1.00) |
-| Out of combat | Rinse's own (OOC) Opacity |
-| Mouse over the frame's title strip | Fully opaque (Rinse's own behaviour) |
+| Out of combat | OOC Opacity, Rinse's original slider |
+| Mouse over the frame's title strip | Fully opaque, as in plain Rinse |
 
-The debuff buttons are in their own frame and stay fully visible, as in Rinse itself.
+The debuff buttons sit in their own frame and stay fully visible, same as in plain Rinse.
 
-The checkboxes under the new slider move down one slot and the options window grows to make
-room. Combat Opacity is account-wide, like Rinse's own Opacity. Rinse's own files aren't
-changed, so its folder stays a clean git clone.
+To make room for the slider, the checkboxes below it move down a row and the window gets a
+little taller. Combat Opacity is account-wide, like Rinse's own setting. Rinse's own files
+aren't modified.
 
 ## Install
 
-- **With a launcher or git:** add `https://github.com/daev-code/RinseCombatOpacity` as an addon, or
-  `git clone` it into `Interface\AddOns`. Keep the `.git` folder: launchers that install
-  from git use it to fetch updates.
-- **By hand:** copy this folder to `Interface\AddOns\RinseCombatOpacity`. Updates are then manual too.
+Add `https://github.com/daev-code/RinseCombatOpacity` to your launcher, or `git clone` it into
+`Interface\AddOns`. Leave the `.git` folder in place: launchers that install from git need
+it to pull updates.
+
+You can also copy the folder to `Interface\AddOns\RinseCombatOpacity` yourself, but then
+you'll need to update it yourself too.
